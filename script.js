@@ -5,7 +5,7 @@ const STORE = [{
             '123-567',
             '1234-5678',
             'No count- just dance to the beat',
-            'Ust stand there and watch everyone else'
+            'Just stand there and watch everyone else'
         ],
         correctAnswer: '123-567'
     },
@@ -23,11 +23,11 @@ const STORE = [{
         question: 'Is it ok for men to use their hips?',
         answers: [
             'NO, they must dance in a stiff manner',
-            'Yes, let the rythm take over',
+            'Yes, let the rhythm take over',
             'Men must move their hips more than their partner',
             'None of the above'
         ],
-        correctAnswer: 'Yes, let the rythm take over'
+        correctAnswer: 'Yes, let the rhythm take over'
     },
     {
         question: 'What happened to "4" and "8" in the dance count?',
