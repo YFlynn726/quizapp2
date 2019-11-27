@@ -17,25 +17,33 @@
     <main>
         <div class='quiz-container'>
 
+            <section class='quiz-info hidden'>
+                <ul>
+                    <li class="row">Question:
+                        <span class="questionNumber">1</span>/5</li>
+                    <li class="sizeMe">Score:
+                        <span class="score">0</span></li>
+                </ul>
+            </section>
+
             <section class='landing-page'>
 
                 <h3>How much do you know about the basics of salsa dancing. Test your knowledge.</h3>
                 <p>This quiz is to test your knowledge about the fundamentals of salsa dancing.</p>
 
-                <a href='./index2.html'><button type="button" id="start" >Start Quiz</button></a>
+                <button type="button" id="start">Start Quiz</button>
 
             </section>
-
-
-
-            <a href="https://mail.google.com/mail/u/0?ui=2&ik=9a47b01a82&attid=0.1&permmsgid=msg-f:1649920637314376593&th=16e5b213f6b5a391&view=att&disp=safe">
-                <img src="./IMG_9040 (1).jpg" alt="Back of Napkin Design" style="width:42px;height:42px;border:0;">
-            </a>
+            <section class="questionBox altBox hidden">
+            </section>
+            <section class="responseBox altBox hidden"></section>
+            <section class="finalBox altBox hidden"></section>
+            </section>
 
         </div>
     </main>
-    <script src="script.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

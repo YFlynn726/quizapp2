@@ -1,41 +1,49 @@
+body * {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: white;
     margin: 0;
-    background: cover;
-    background-color: gray;
+    padding: 0;
+    background: url("https://img.grouponcdn.com/deal/f9wbqw7pcinhtRw9pyuv/mu-2048x1229/v1/sc600x600.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
 }
 
 main {
-    background-color: gray;
-    color: black;
+    color: white;
     text-align: center;
+    background: rgba(0, 0, 0, .8);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
-section {
+.landing-page {
     width: 60%;
     padding: 40px;
     margin: 25px auto;
-    background: white;
     border-radius: 10px;
 }
 
 ul {
     list-style-type: none;
-}
-
-fieldset {
-    width: 60%;
-    padding: 40px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; 
+   /* align-content: center; */
+    text-align: center;
 }
 
 header {
     line-height: 1;
     top: 24px;
     text-align: center;
+    font-family: Chalkduster, fantasy;
+    font-size: 150%;
 }
 
 .row {
@@ -45,10 +53,138 @@ header {
     margin: 0 auto;
 }
 
+.sizeMe {
+    max-width: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
 
-/* .sizeMe {
-  max-width: 1000px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto; 
-} */
+.hidden {
+    display: none;
+}
+
+.questionBox {
+    background: rgba(0, 0, 0, .8);
+    padding: 25px;
+    width: 65%;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+input,
+button {
+    cursor: pointer;
+}
+
+.question-form {
+    color: white;
+}
+
+.question-form fieldset {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-form legend {
+    background: red;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: chalkduster;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.question-label {
+    border: 1px solid green;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background: grey;
+    color: white;
+    margin: 15px 0;
+}
+
+.question-label:hover {
+    background: rgba(255, 0, 0, 0.534);
+}
+
+input[type="radio"]:checked+label {
+    background: blue;
+}
+
+.question-form input[type="submit"] {
+    margin: 25px auto 0;
+    background: white;
+    border: 0;
+    color: black;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: chalkduster;
+    font-size: 12px;
+}
+
+#start {
+    margin: 25px auto 0;
+    background: red;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: chalkduster;
+    font-size: 15px;
+}
+
+#start:hover {
+    background: black;
+}
+
+.nextButton {
+    margin: 25px auto 0;
+    background: red;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-family: chalkduster;
+    font-size: 12px;
+}
+
+.nextButton:hover {
+    background: black;
+}
+
+.images {
+    border-radius: 15px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.restartButton {
+    margin: 25px auto 0;
+    background: red;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-family: chalkduster;
+    font-size: 12px;
+}
+
+.restartButton:hover {
+    background: black;
+}
